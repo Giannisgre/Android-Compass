@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="eu.giannisgrevenitis.compass.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/latText"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:src="@drawable/arrow"
+        android:id="@+id/arrowImage" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/longText"
+        android:textColor="@color/colorAccent"
+        android:padding="5dp"
+        android:textSize="13dp"
+        android:id="@+id/latText"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorAccent"
+        android:padding="5dp"
+        android:textSize="13dp"
+        android:id="@+id/longText"/>
+</RelativeLayout>
